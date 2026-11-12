@@ -1,0 +1,14 @@
+[build-system]
+requires = ["maturin>=1.5,<2"]
+build-backend = "maturin"
+
+[project]
+name = "tomllib-rs"
+version = "0.1.0"
+description = "Drop-in replacement for tomllib with a Rust core: same values, same TOMLDecodeError messages and positions"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+
+[tool.maturin]
+module-name = "tomllib_rs._core"
+python-source = "."

@@ -1,0 +1,13 @@
+[package]
+name = "tomllib-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Port of Python's tomllib parser to Rust: same values, same error messages and positions"
+license = "MIT"
+
+[lib]
+name = "tomllib_core"
+path = "src/parser.rs"
+
+[dependencies]
+indexmap = "2"
